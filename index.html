@@ -5,16 +5,55 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Mentor | Article preview component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body
+    class="flex justify-center items-center my-20 mx-6 font-manrope text-project bg-lightGrayishBlue"
+  >
     <div id="app">
-      <main>
-        Shift the overall look and feel by adding these wonderful touches to
-        furniture in your home Ever been in a room and felt like something was
-        missing? Perhaps it felt slightly bare and uninviting. I’ve got some
-        simple tips to help you make any room feel complete. Michelle Appleton
-        28 Jun 2020 Share
-      </main>
+      <article class="bg-white rounded-xl shadow-xl overflow-hidden">
+        <div class="w-full h-52">
+          <img
+            class="w-full h-full"
+            src="images/drawers.jpg"
+            alt="Drawers"
+          />
+        </div>
+        <h1
+          class="text-veryDarkGrayishBlue text-[16px] font-bold pt-8 pb-4 px-8"
+        >
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h1>
+        <p class="pl-8 text-grayishBlue pr-10 pb-8">
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+        <div class="px-8 pb-4 flex justify-between items-center space-x-4">
+          <img
+            class="rounded-full h-9"
+            src="images/avatar-michelle.jpg"
+            alt="avatar"
+          />
+          <div class="pr-14">
+            <p class="text-veryDarkGrayishBlue text-[12px] font-extrabold pb-1">
+              Michelle Appleton
+            </p>
+            <p class="text-xs text-grayishBlue font-semibold">28 Jun 2020</p>
+          </div>
+          <div
+            class="p-2 bg-lightGrayishBlue rounded-full flex justify-center items-center"
+          >
+            <img src="images/icon-share.svg" alt="share" />
+          </div>
+        </div>
+      </article>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
