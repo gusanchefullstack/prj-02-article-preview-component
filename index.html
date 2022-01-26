@@ -19,14 +19,14 @@
   <body
     class="flex justify-center items-center my-20 mx-6 font-manrope text-project bg-lightGrayishBlue lg:h-screen"
   >
-    <div id="app">
+    <div id="app" class="lg:relative">
       <article
-        class="bg-white rounded-xl shadow-xl overflow-hidden lg:flex lg:flex-nowrap lg:max-w-5xl lg:space-x-6 lg:pr-12"
+        class="relative lg:static bg-white rounded-xl shadow-xl overflow-hidden lg:flex lg:flex-nowrap lg:max-w-5xl lg:space-x-6 lg:pr-12"
       >
         <div class="basis-5/12">
           <img class="w-full h-full" src="images/drawers.jpg" alt="Drawers" />
         </div>
-        <div class="lg:basis-7/12 relative">
+        <div class="lg:basis-7/12">
           <h1
             class="text-veryDarkGrayishBlue text-[16px] font-bold pt-8 pb-4 px-8 lg:text-3xl lg:pt-16 lg:pr-4 lg:font-extrabold"
           >
@@ -42,9 +42,9 @@
           </p>
           <div
             id="share-banner"
-            class="hidden px-8 py-4 justify-between items-center bg-veryDarkGrayishBlue rounded-b-xl absolute left-0 right-0 bottom-0 lg:w-5/12 lg:rounded-lg lg:bottom-28 lg:left-80 lg:shadow-md"
+            class="hidden px-8 py-4 justify-between items-center bg-veryDarkGrayishBlue rounded-b-xl absolute left-0 lg:left-auto right-0 lg:-right-16 bottom-0 lg:bottom-36 lg:w-3/12 lg:rounded-lg  lg:shadow-2xl"
           >
-            <div class="flex justify-start items-center space-x-3">
+            <div class="flex justify-start items-center space-x-3 lg:space-x-5">
               <p class="tracking-[5px] text-desaturatedDarkBlue">SHARE</p>
               <div class="text-base text-white">
                 <i class="fab fa-facebook-square fa-lg"></i>
@@ -86,9 +86,9 @@
             </div>
             <div
               id="share-button-card"
-              class="p-2 bg-lightGrayishBlue rounded-full flex justify-center items-center hover:cursor-pointer lg:p-3"
+              class="bg-lightGrayishBlue p-2  rounded-full flex justify-center items-center hover:cursor-pointer lg:p-3"
             >
-              <img src="images/icon-share.svg" alt="share" />
+              <img id="share-button-card-img" src="images/icon-share.svg" alt="share" />
             </div>
           </div>
         </div>
