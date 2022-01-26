@@ -17,67 +17,79 @@
     ></script>
   </head>
   <body
-    class="flex justify-center items-center my-20 mx-6 font-manrope text-project bg-lightGrayishBlue"
+    class="flex justify-center items-center my-20 mx-6 font-manrope text-project bg-lightGrayishBlue lg:h-screen"
   >
     <div id="app">
-      <article class="bg-white rounded-xl shadow-xl overflow-hidden">
-        <div class="w-full h-52">
+      <article
+        class="bg-white rounded-xl shadow-xl overflow-hidden lg:flex lg:flex-nowrap lg:max-w-5xl lg:space-x-6 lg:pr-12"
+      >
+        <div class="basis-5/12">
           <img class="w-full h-full" src="images/drawers.jpg" alt="Drawers" />
         </div>
-        <h1
-          class="text-veryDarkGrayishBlue text-[16px] font-bold pt-8 pb-4 px-8"
-        >
-          Shift the overall look and feel by adding these wonderful touches to
-          furniture in your home
-        </h1>
-        <p class="pl-8 text-grayishBlue pr-10 pb-6">
-          Ever been in a room and felt like something was missing? Perhaps it
-          felt slightly bare and uninviting. I’ve got some simple tips to help
-          you make any room feel complete.
-        </p>
-        <div
-          id="share-banner"
-          class="hidden px-8 py-4 justify-between items-center bg-veryDarkGrayishBlue rounded-b-xl"
-        >
-          <div class="flex justify-start items-center space-x-3">
-            <p class="tracking-[5px] text-desaturatedDarkBlue">SHARE</p>
-            <div class="text-base text-white">
-              <i class="fab fa-facebook-square fa-lg"></i>
+        <div class="lg:basis-7/12">
+          <h1
+            class="text-veryDarkGrayishBlue text-[16px] font-bold pt-8 pb-4 px-8 lg:text-3xl lg:pt-16 lg:pr-4 lg:font-extrabold"
+          >
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h1>
+          <p
+            class="pl-8 text-grayishBlue pr-10 pb-6 lg:text-lg lg:pr-2 lg:font-semibold"
+          >
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+          <div
+            id="share-banner"
+            class="hidden px-8 py-4 justify-between items-center bg-veryDarkGrayishBlue rounded-b-xl"
+          >
+            <div class="flex justify-start items-center space-x-3">
+              <p class="tracking-[5px] text-desaturatedDarkBlue">SHARE</p>
+              <div class="text-base text-white">
+                <i class="fab fa-facebook-square fa-lg"></i>
+              </div>
+              <div class="text-sm text-white">
+                <i class="fab fa-twitter fa-lg"></i>
+              </div>
+              <div class="text-sm text-white">
+                <i class="fab fa-pinterest fa-lg"></i>
+              </div>
             </div>
-            <div class="text-sm text-white">
-              <i class="fab fa-twitter fa-lg"></i>
-            </div>
-            <div class="text-sm text-white">
-              <i class="fab fa-pinterest fa-lg"></i>
+            <div
+              id="share-button-social"
+              class="flex p-2 bg-desaturatedDarkBlue rounded-full justify-center items-center hover:cursor-pointer"
+            >
+              <img src="images/icon-share-grey.svg" alt="share" />
             </div>
           </div>
           <div
-            id="share-button-social"
-            class="flex p-2 bg-desaturatedDarkBlue rounded-full justify-center items-center hover:cursor-pointer"
+            id="contact-card"
+            class="flex px-8 pb-4 justify-between items-center space-x-4 lg:space-x-0 lg:pb-12"
           >
-            <img src="images/icon-share-grey.svg" alt="share" />
-          </div>
-        </div>
-        <div
-          id="contact-card"
-          class="flex px-8 pb-4 justify-between items-center space-x-4"
-        >
-          <img
-            class="rounded-full h-9"
-            src="images/avatar-michelle.jpg"
-            alt="avatar"
-          />
-          <div class="pr-14">
-            <p class="text-desaturatedDarkBlue text-[12px] font-extrabold pb-1">
-              Michelle Appleton
-            </p>
-            <p class="text-xs text-grayishBlue font-semibold">28 Jun 2020</p>
-          </div>
-          <div
-            id="share-button-card"
-            class="p-2 bg-lightGrayishBlue rounded-full flex justify-center items-center hover:cursor-pointer"
-          >
-            <img src="images/icon-share.svg" alt="share" />
+            <div class="flex flex-nowrap space-x-4">
+              <img
+                class="rounded-full h-9 lg:h-12"
+                src="images/avatar-michelle.jpg"
+                alt="avatar"
+              />
+              <div class="pr-14">
+                <p
+                  class="text-desaturatedDarkBlue text-[12px] font-extrabold pb-1 lg:text-lg"
+                >
+                  Michelle Appleton
+                </p>
+                <p class="text-xs text-grayishBlue font-semibold lg:text-lg">
+                  28 Jun 2020
+                </p>
+              </div>
+            </div>
+            <div
+              id="share-button-card"
+              class="p-2 bg-lightGrayishBlue rounded-full flex justify-center items-center hover:cursor-pointer lg:p-3"
+            >
+              <img src="images/icon-share.svg" alt="share" />
+            </div>
           </div>
         </div>
       </article>
