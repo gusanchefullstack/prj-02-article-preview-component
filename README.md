@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [FrontendMentor.io](https://your-solution-url.com)
+- Live Site URL: [Vercel](https://prj-02-article-preview-component.vercel.app/)
 
 ## My process
 
@@ -46,22 +46,21 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+In this project I learned how to change HTML attributes in Javascript. Doing that, I realized that ViteJS change the name of the images (assets) if they are not included in a Public folder (https://vitejs.dev/guide/assets.html#the-public-directory) so I was needed to put them in that folder in order to be able to reference that files in Javscript's set-attribute command.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+shareButtonSocial.addEventListener("click", (ev) => {
+  if (bannerDisplayed) {
+    shareBanner.classList.replace("flex", "hidden");
+    bannerDisplayed = false;
+    shareButtonCard.classList.replace(
+      "bg-desaturatedDarkBlue",
+      "bg-lightGrayishBlue"
+    );
+    shareButtonCardImg.setAttribute("src", "images/icon-share.svg");
+  }
+});
+
 ```
 ### Continued development
 
@@ -69,8 +68,8 @@ Future projects will be developed using TailwindCSS and vanilla Javascript when 
 
 ### Useful resources
 
+- [ViteJS Public Directory](https://vitejs.dev/guide/assets.html#the-public-directory)
 - [TailwindCSS Directives](https://tailwindcss.com/docs/functions-and-directives) - Use of @apply directive
-- [Form states](https://tailwindcss.com/docs/hover-focus-and-other-states#form-states) - Style form elements in different states using modifiers like required, invalid, and disabled.
 - [Customizing Colors in TailwindCSS](https://tailwindcss.com/docs/customizing-colors) - Adding personalized color names to be used in tailwindcss.
 - [Customizing Fonts in TailwindCSS](https://tailwindcss.com/docs/font-family#using-custom-values) - Adding Google fonts to be used in tailwindcss.
 
