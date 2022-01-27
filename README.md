@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [FrontendMentor.io](https://your-solution-url.com)
+- Solution URL: [FrontendMentor.io](https://www.frontendmentor.io/solutions/article-preview-component-solution-RuVzCzgRh)
 - Live Site URL: [Vercel](https://prj-02-article-preview-component.vercel.app/)
 
 ## My process
